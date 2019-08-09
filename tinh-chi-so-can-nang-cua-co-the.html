@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span id="ketqua"></span>
+<script>
+
+    let chieucao = parseFloat(prompt("nhap vao chieu cao"));
+    let cannang = parseFloat(prompt("nhap vao can nang "));
+    let ketqua = cannang / ((chieucao / 100) * (chieucao / 100));
+
+    if (ketqua < 18.0) {
+        document.write("Underwight");
+    } else if (ketqua < 25.0) {
+        document.write("Nomar");
+    } else if (ketqua < 30.0) {
+        document.write("Overwight");
+    } else {
+        document.write("Obese")
+    }
+
+
+
+</script>
+</body>
+</html>
